@@ -1,0 +1,16 @@
+Wow! That "animation-timing-function" is really cool!
+You basically know a bunch of timing functions, such as "linear" and "ease-out"
+(which is just a name for some mathematical equation),  and you can set how
+the internal timings of balls, stars, or just about anything!
+
+That's pretty neat; which brings me to the next little "discovery" of the best morning
+of code, kitties, coffee and frost I've ever had: I might like front-end development.
+
+I should sleep hammock tonight, and find my power-charger!
+
+Okay, the very next step in the Animation properties is Bezier curves, which
+is actually the very mapping of said animation timings. This is for fine-grain
+control for the timings of multiple, concurent animations over infinite loops.
+
+No fuckin' power. actual electricity to continue.
+Problematic.
