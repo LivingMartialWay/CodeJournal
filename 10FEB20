@@ -1,0 +1,48 @@
+1) Script tags can also point to SRC, and load external files/scripts to keep your code cleaner.
+
+2) JavaScript is Object-oriented. Works with both Client&Server ( thanks to node )
+and interacts with React, Angular, and other frameworks.
+Html = Noun , CSS = Adjectives, and JS = Verbs.
+
+3) Five Datatypes. Number. String. Boolean. Undef. Null.
+    JavaScript auto-detects the datatype, so be careful.
+
+4) Variable naming is an art. It's the human legibility.
+
+5) Use camelCase in JS by convention.
+
+6) // = Comments and /*
+                        Multiple line commentout
+                              */
+
+7) Type Coercion. Forces some variables into other datatypes when required.
+    Booleans, Undef, numbers. everything.
+
+8) Prompt.  Prompts the user for info.
+
+9) Math Operators
+
+10) Logic operators create boolean values
+
+11) TypeOf =  Shows what datatype you have onhand
+
+12) Operator Presidence = like order of operations
+
+13) Associativity == math goes right to left, but assignment goes right to left.
+
+14) More Operators
+
+15) Code challenge
+
+    Var = johnHeight, johnWeight, markHeight, markWeight;
+    johnHeight = 1.7; //meters
+    johnWeight = 60;  //kg
+    markHeight = 1.8; //meters
+    markWeight = 69; // kg
+
+    johnBMI = (johnWeight)/(johnHeight*johnHeight)
+    markBMI = '' ''
+
+    johnFatter = (johnBMI > markBMI)
+
+    console.log('is john fatter than mark?' + johnFatter)
