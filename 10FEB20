@@ -1,3 +1,5 @@
+10FEB20
+
 1) Script tags can also point to SRC, and load external files/scripts to keep your code cleaner.
 
 2) JavaScript is Object-oriented. Works with both Client&Server ( thanks to node )
