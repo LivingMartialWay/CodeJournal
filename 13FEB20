@@ -42,71 +42,104 @@ While loops,  I admit - I mostly was toast. The notation is somewhat different.
 
 
 
-John and his family went on a holiday and went to 3 different restaurants. The bills were $124, $48 and $268.
+`/*****************************
+* CODING CHALLENGE 4
 
-To tip the waiter a fair amount, John created a simple tip calculator (as a function).
-He likes to tip
-20% of the bill when the bill is less than $50,
-15% when the bill is between $50 and $200,
-10% if the bill is more than $200.
+Let's remember the first coding challenge where Mark and John compared their BMIs.
+Let's now implement the same functionality with objects and methods.
 
-In the end, John would like to have 2 arrays:
-1) Containing all three tips (one for each bill)
-2) Containing all three final paid amounts (bill + tip).
+1. For each of them, create an object with properties for their full name, mass, and height
 
-(NOTE: To calculate 20% of a value, simply multiply it with 20/100 = 0.2)
+2. Then, add a method to each object to calculate the BMI. Save the BMI to the object and also return it from the method.
+
+3. In the end, log to the console who has the highest BMI, together with the full name and the respective BMI.
+Don't forget they might have the same BMI.
+
+Remember: BMI = mass / height^2 = mass / (height * height). (mass in kg and height in meter).
 
 GOOD LUCK 😀
-2nd attempt ======================================================================================================
+*/
+/*
 
-var bills = [48, 128, 248];
+----------------1st Version! WORKS!------------
+var john = {
+    firstName: 'John',
+    height: 1.8,
+    weight: 100,
+    BMICalc: function() {
+        return this.weight / (this.height * this.height);
+    }
+};
 
-function TipCalc(bill) {
-    if (bill < 50) {
-      return (bill * .2 );
-    } else if (bill >= 50 && bill < 200) {
-      return (bill * .15);
-    } else
-      return (bill * .10);
+var BMI = john.BMICalc();
+john.BMI = age;
+
+----------------2nd Version! WORKS!------------------
+var john = {
+    firstName: 'John',
+    height: 1.8,
+    weight: 100,
+    BMICalc: function() {
+        return this.weight / (this.height * this.height);
+    }
+};
+john.BMI = john.BMICalc();
+
+---------------3rd Version! WORKS ------------------------
+var john = {
+    firstName: 'John',
+    height: 1.8,
+    weight: 100,
+    BMICalc: function() {
+        john.BMI = this.weight / (this.height * this.height);
+    }
+};
+john.BMICalc();
+
+---------------4th Version! Works---------------------------
+var john = {
+    firstName: 'John',
+    height: 1.8,
+    weight: 100,
+    BMICalc: function() {
+        this.BMI = this.weight / (this.height * this.height);
+    }
+};
+john.BMICalc();
+-------------------------------------------------------------
+
+/////////////////////////////////////////////////////////////////
+            // WHOLE SOLUTION //
+/////////////////////////////////////////////////////////////////
+var john = {
+    firstName: 'John1',
+    height: 1.8,
+    weight: 100,
+    BMICalc: function() {
+        john.BMI = this.weight / (this.height * this.height);
+    }
+};
+
+var mark = {
+    firstName: 'Mark1',
+    height: 1.5,
+    weight: 150,
+    BMICalc: function() {
+        mark.BMI = this.weight / (this.height * this.height);
+    }
+};
+
+function compareBMIs() {
+    if (john.CalcBMI() === mark.CalcBMI()) {
+    console.log('Both ' + john.firstName +' & ' + mark.firstName + 'have the same BMI\'s ' + john.BMI +' & ' + mark.BMI);
+    }
+    else if (john.BMI > mark.BMI) {
+    console.log(john.firstName + ' has a higher BMI of ' + john.BMI)
+    }
+    else {
+    console.log(mark.firstName + ' has a higher BMI of ' + mark.BMI)
+    }
 }
 
-var tips = [TipCalc(bills[0]),
-            TipCalc(bills[1]),
-            TipCalc(bills[2])];
-
-var final = [bills[0] + tips[0],
-             bills[1] + tips[1],
-             bills[2] + tips[2]];
-
-// WORKS!
-
-
-
-
-
-1st attempt ======================================================================================================
-// Need imputs of bills: $124, $48, $268
-// Perhaps this could be put into array, like following? ::
-// var bills = [124, 48, 268];
-// the question becomes - How do we feed this array's items individually into the function TipCalc?
-// We probably need to loop through the array!
-
-function TipCalc(bill) {
-    if (bill < 50) {
-        return (bill * 0.2);
-    }  else if (bill >= 50 && bill < 200) {
-        return (bill * 0.15);
-    } else {
-        return (bill * 0.10);
-    }
-    }
-TipCalc(bills[ ?? ])
-
-//make array of tips.
-//var TipArray = new Array[];
-//We need to append each result from TipCalc to this array,
-//then add them to the array of Bills.
-
-// adding arrays.
-//
+compareBMIs();
 
