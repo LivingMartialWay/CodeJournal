@@ -1,0 +1,34 @@
+Jesus, today was pulling teeth.
+I needed to pomodoro hard and this... this is the last 5 minutues of my 4th one.
+Took hours to get 4 pomodoros.
+
+Anyway, today's topics were :
+
+1) Objects.
+
+2) Methods.
+
+3) This.
+
+4) For Loops.
+
+5) While Loops.
+
+...
+
+Objects are .. well.. containers of data. They can have just about anything inside.
+you can call this data using ".property" dot.notation - strings, arrays, other objects, numbers, everything.
+You make objects with curly {} braces.
+
+Now, there is another topic of OBJECT LITERAL v OBJECT SYNTAX,
+and I don't really understand the difference honestly.
+
+Methods are functions within objects.
+I did a big-ass coding challenge and got it pretty good.
+Perfectly, actually... but it took a handful of attempts, and bugsquashing.
+
+Then we got onto Loops. I was already pretty fucking burnt.
+For loops, i = 0 counter, i++, etc.
+This I understood mostly - even using the limiter (>) with array.length.
+
+While loops,  I admit - I mostly was toast. The notation is somewhat different.
