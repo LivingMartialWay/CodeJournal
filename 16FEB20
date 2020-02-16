@@ -1,0 +1,35 @@
+Started at 930, with Shlomit doing her work.
+Going for 5-6 pomodoros this week per day.
+
+Started by reviewing and fixing the last day's (14FEB20) work, coding challenge 5.
+Turns out a little minor syntactical error (missing curly bracket after FOR loop)
+will cause an entire fuckload of problems, that aren't necessarily reported by the browser's console
+as errors!!  That's a huge lesson!  Some errors are not reported!!  You need to code perfectly.
+
+anyway, we're progressing on!
+
+The theoretical JavaScript chapter was a bit complex.
+
+Execution Stack.
+Hoisting.
+Scope & Lexical scope.
+This.
+
+All of it makes pretty good sense, because of the times at Developers Institute.
+I intuitively understand most of this. It wasn't even that complex.
+Hoisting being the most unclear, lecture #39 would clarify (also, a neat google search?)
+
+We're now moving onto DOM manipulation.
+
+OKAY! HOLY SMOKES.. the second part of today's learning got really complex, really fucking quick.
+  math.
+  querySelector  (plus editing this selector conditionally~)
+  getElementByID
+  callback functions / anonymous functions
+  adding css classes on conditions
+  adding strings and stylings.
+  HOLY FUCKING SMOKES.
+
+  Everything in SECTION 4 NEEDS TO BE GONE OVER, FINE TOOTH COMB STYLE.
+  I think that tomorrow we'll rewatch all these section 4 lectures and get'er'done.
+  Acutally, alot of it made sense.
