@@ -1,0 +1,84 @@
+POMODOROS  =  X,X,X,X,X,X
+
+Today is the PIG GAME project. Pair Coding with UDEMY instructor. I
+ think it's good to get the actual lines in, and help me understand.
+
+DOM MANUPULATION:
+    1) Creating variables (We made scores, activePlayer, and roundScore)
+    2) another big part of the this lecture was MATH.RANDOM & MATH.FLOOR manipulations
+      Math is a library/extention which allows you ... well, mathematical functions.
+
+    3) Document / querySelectors. We used this to grab a few HTML elements from index.html,
+    however, being not 100% clear - I MDN.docs's this property to better understand:
+        This thing goes and "grabs" the element from the DOM.
+
+        So let's first name some variables here:
+          Document = This is the representation of the webpage,  essentially the code behind
+          the actual webpage.
+          Element = The most basic things in the DOM. This is stuff. Like boxes, and text.
+
+      So, thus.. when the QuerySelector finds the first element, it searches the Document
+      and 'grabs' the first Element and "holds it"
+
+      then allows the following methods/actions (using .dot notation) to edit/setit/getit/
+      and also style it, by giving it IN-LINE CSS ATTRIBUTES.
+
+EVENTS/LISTENERS/HANDLERS:
+      So eventlisteners ..
+      Here is the formula :
+      document.querySelector('.element').addEventListener('click', btn)''
+          |         |          |              |             |       |
+        DOM       VERB   Element2Augment    E.L.   which.event    action2perform
+
+        Anonymous function = when you write your function DIRECTLY INTO the event listener
+        (where you see action2perform - writing it there. That's called Anonymous function)
+        this function cannot be reused!
+
+
+      GetElementById = which is another method of getting DOM elements, purportedly faster.
+
+SCORES & ACTIVE PLAYER ::
+
+        SCORES:
+        Few things related to scores, first of all - we used element selectors, and set
+        them to our internal JS variables, which will now display those values. This
+        is super useful because it will display our running scores, which is held in our JS.
+
+        We used two math-operators, !== which is NOT,  and
+        += which is RUNNING SUM, which is super helpful for calculating current value + variable as
+        new current value.
+
+        TERNARY OPERATOR
+        = Ternary is a SINGLE LINE IF/ELSE statement.
+        TERNARY == ::: condition ? exprIfTrue : exprIfFalse :::
+        https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator
+
+        TOGGLE!
+        Right, so toggle is an easy way to switch back/forth between these fucking states.
+
+        Inline CSS display property to none on conditional
+
+#51 DRY & "HOLD" Functionality
+
+        DRY:
+        DRY is really easy.  DON'T REPEAT YOURSELF.
+        Anything you find yourself doing twice, or more - write a function and call it.
+
+        HOLD:
+        Simply made a button and added functionality to it, by using eventListener, and
+        some math functions.
+
+        CSS:
+        editing lots of CSS inside the javascript // inLine styling is not a great idea.
+        SO! If you're doing lots of this, it's better to go directly into the CSS and
+        add yourself a class, and then add/remove with your JavaScript instead.
+
+#52 FUCK FUCK FUCK FUCK
+
+    ERROR! IF I AM PLAYER 2, and I HIT 'NEW GAME' MY APP DOESN'T REVERT TO PLAYER-0.
+    That's tomorrow's bug...  We'll review and fix it as warmup.
+
+
+
+
+WOW.
