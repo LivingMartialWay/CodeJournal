@@ -1,0 +1,22 @@
+08 April 2020
+
+Corona Virus Coding.
+
+React LifeCycle - interesting topic.
+Basically :
+  Constructor
+  Render()
+  DidMount
+  DidUpdate
+  DidUnmount
+  
+  
+  React Passing-State-as-Props.
+  You can pass state into a component by using prop-like syntax.
+  <SeasonDisplay /> becomes <SeasonDisplay lat={this.state.lat} /> 
+  isn't that fun?
+
+
+When you initialize State, you can so outright as a constructor, or just declare it... and Babel will make it a constructor. 
+
+There's all sorts of shit here, check my paper notes in my React Book.
